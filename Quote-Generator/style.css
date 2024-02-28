@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Tangerine:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bad Script", cursive;
+}
+body {
+  background: #bbfac8;
+}
+.quote-box {
+  background: #fff;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.quote-box h2 {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(10, 143, 68);
+  margin-bottom: 40px;
+}
+.quote-box h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(88, 229, 23);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.quote-box blockquote {
+  font-size: 26px;
+  font-weight: bold;
+  min-height: 110px;
+}
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+  content: '"';
+}
+.quote-box span {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+}
+.quote-box span::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: rgb(88, 229, 23);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+.quote-box div {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.quote-box button {
+  background: rgb(88, 229, 23);
+  color: #fff;
+  border-radius: 25px;
+  border: 1px solid rgb(88, 229, 23);
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+}
+.quote-box button i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.quote-box button:nth-child(2) {
+  background: transparent;
+  color: #333;
+}
